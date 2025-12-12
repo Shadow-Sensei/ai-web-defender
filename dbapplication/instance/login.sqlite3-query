@@ -1,0 +1,4 @@
+-- database: ./testdb.db
+
+INSERT INTO users(username,password) VALUES ('sufi','12345');
+SELECT * FROM users;
