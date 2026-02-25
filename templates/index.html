@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{%block title%}6IX7EVEN{% endblock %}
+
+{% block content %}
+<div>
+
+    <h1 class="brand">6IX7EVEN</h1>
+
+{% if current_user.is_authenticated %}
+    <h3>
+        Hello {{current_user.username}}
+    </h3>
+
+{% else %}
+   <p style="margin: 15px 0; color: #555;">
+        Secure authentication demo with attack detection
+    </p>
+
+{% endif %}
+
+ <div class="button-group">
+        <a href="{{ url_for('signup') }}" class="btn">Sign up</a>
+        <a href="{{ url_for('login') }}" class="btn btn-secondary">Login</a>
+    </div>
+
+</div>
+
+
+
+
+{%endblock%}

@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Instance folder (runtime data, DB, secrets)
+instance/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env

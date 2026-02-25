@@ -1,0 +1,3 @@
+-- database: ./instance/testdb.db
+
+SELECT * FROM users;
